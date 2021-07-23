@@ -15,6 +15,9 @@ body {
   font-size: $font-med;
   color: $grayishBlue;
   font-weight: 300;
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 // links
@@ -34,6 +37,12 @@ a, a:visited, a:hover {
   &-ai-c {
     align-items: center;
   }
+}
+
+// Spacing
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 // Buttons
