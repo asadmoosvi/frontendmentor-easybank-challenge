@@ -6,7 +6,6 @@
     right: 0px;
     bottom: 0px;
     background-image: linear-gradient($darkBlue, transparent);
-    animation: fade-out 300ms ease-in-out forwards;
   }
   //menu open styles
   &.open {
@@ -21,13 +20,6 @@
       > span:last-child {
         transform: rotate(-45deg);
       }
-    }
-
-    .overlay {
-      animation: fade-in 300ms ease-in-out forwards;
-    }
-    .header__menu {
-      animation: fade-in 300ms ease-in-out forwards;
     }
   }
   nav {
@@ -65,7 +57,6 @@
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
-    animation: fade-out 300ms ease-in-out forwards;
     a {
       color: $darkBlue;
       padding: 0.625rem;
