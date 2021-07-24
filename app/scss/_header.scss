@@ -49,6 +49,7 @@
     }
   }
   &__menu {
+    z-index: 999; // make sure its on top
     background: $white;
     padding: 1.625rem;
     margin-top: 1.5rem;
@@ -91,14 +92,6 @@
           opacity: 1;
         }
       }
-    }
-  }
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
-    transition: opacity 300ms ease-in-out;
-    &:hover {
-      opacity: 0.75;
     }
   }
 }
