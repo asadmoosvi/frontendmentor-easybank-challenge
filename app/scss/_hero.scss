@@ -23,6 +23,14 @@
       background-repeat: no-repeat;
       background-size: 90%;
     }
+
+    @include breakpoint-up(medium) {
+      &::after {
+        background-position: center;
+        background-size: 50%;
+      }
+    }
+
     @include breakpoint-up(large) {
       flex: 3;
       order: 2;
@@ -34,13 +42,6 @@
       &::after {
         background-size: contain;
         height: 115%;
-      }
-    }
-
-    @include breakpoint-up(medium) {
-      &::after {
-        background-position: center;
-        background-size: 50%;
       }
     }
   }
