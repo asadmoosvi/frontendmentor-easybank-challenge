@@ -27,11 +27,13 @@
       flex: 3;
       order: 2;
       min-height: 32rem;
-      padding: 1rem;
+      padding-top: 1rem;
       background-image: url('/images/bg-intro-desktop.svg');
-      background-position: top;
+      background-position: 50% 1rem;
+      background-size: contain;
       &::after {
         background-size: contain;
+        height: 115%;
       }
     }
 
