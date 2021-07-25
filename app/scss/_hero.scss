@@ -24,28 +24,14 @@
       background-size: 90%;
     }
     @include breakpoint-up(large) {
-      //background-image: url('/images/bg-intro-desktop.svg');
-      background-image: none;
-      background-position: left center;
-      min-height: 41rem;
       flex: 3;
       order: 2;
+      min-height: 32rem;
+      padding: 1rem;
+      background-image: url('/images/bg-intro-desktop.svg');
+      background-position: top;
       &::after {
-        border: 1px solid red;
-        height: 122%;
-        width: 120%;
-        background-size: 94%;
-        background-position: center 150%;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        background-image: url('/images/bg-intro-desktop.svg');
-        width: 150%;
-        height: 100%;
-        background-position: 0% 83%;
-        background-repeat: no-repeat;
-        background-size: 122%;
+        background-size: contain;
       }
     }
   }
