@@ -1,0 +1,32 @@
+.features {
+  text-align: center;
+  background-color: $lightGrayishBlue;
+  &__heading {
+    margin-bottom: 1.5rem;
+    @include breakpoint-up(medium) {
+      max-width: 60%;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  &__card {
+    @include breakpoint-up(medium) {
+      flex: 1 0 45%;
+    }
+  }
+  &__card-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+}
