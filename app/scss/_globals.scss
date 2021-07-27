@@ -57,6 +57,13 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+a {
+  transition: color 300ms ease-in-out;
+}
+a:hover, a:focus {
+  color: $limeGreen;
+}
+
 //Flexbox
 .flex {
   display: flex;
@@ -123,6 +130,7 @@ button, .button {
   color: $white;
   &:hover {
     opacity: 0.75;
+    color: $white;
   }
 }
 

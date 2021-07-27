@@ -45,10 +45,6 @@
     font-size: $font-med;
     color: $darkBlue;
     padding: 0.2rem 0;
-    transition: color 300ms ease-in-out;
-    &:hover {
-      color: $limeGreen;
-    }
   }
   &__author {
     font-size: calc(#{$font-sm} - 15%);
