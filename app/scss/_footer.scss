@@ -10,6 +10,21 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     justify-items: center;
+    @include breakpoint-up(large) {
+      grid-template-areas:
+        'logo links cta'
+        'social links cta';
+
+      grid-template-columns: 1fr 2fr 3fr;
+      justify-items: start;
+      gap: 0;
+
+    }
+  }
+  &__logo {
+    @include breakpoint-up(large) {
+      grid-area: logo;
+    }
   }
 
   &__social {
@@ -21,11 +36,17 @@
     a:hover svg path {
       fill: $limeGreen;
     }
+    @include breakpoint-up(large) {
+      grid-area: social;
+      gap: 1rem;
+      align-self: end;
+    }
   }
   &__links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex-wrap: wrap;
     a {
       color: inherit;
       display: block;
@@ -33,6 +54,16 @@
       &:hover {
         color: $limeGreen;
       }
+      @include breakpoint-up(large) {
+        text-align-last: left;
+      }
+    }
+    @include breakpoint-up(large) {
+      grid-area: links;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 4rem;
+      justify-self: end;
     }
   }
 
@@ -42,9 +73,21 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2rem;
+      @include breakpoint-up(large) {
+        margin-left: auto;
+        margin-right: 0;
+      }
+
     }
     p {
       margin-bottom: 0;
     }
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      justify-self: end;
+    }
+  }
+  @include breakpoint-up(large) {
+    font-size: calc(#{$font-sm} + 10%);
   }
 }
