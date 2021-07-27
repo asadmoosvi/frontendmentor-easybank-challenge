@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 3rem;
     @include breakpoint-up(medium) {
       flex-direction: row;
       gap: 1rem;
@@ -20,6 +21,14 @@
   &__card {
     @include breakpoint-up(medium) {
       flex: 1 0 45%;
+    }
+    @include breakpoint-up(large) {
+      flex: 1;
+    }
+  }
+  &__card-text {
+    @include breakpoint-up(large) {
+      font-size: $font-sm;
     }
   }
   &__card-icon {
