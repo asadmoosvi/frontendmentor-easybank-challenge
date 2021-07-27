@@ -1,0 +1,48 @@
+.articles {
+  background-color: $veryLightGray;
+  &__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.article-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.article {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  &__image {
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    padding: 1.5rem;
+    background-color: $white;
+  }
+  &__title {
+    display: block;
+    font-size: $font-med;
+    color: $darkBlue;
+    padding: 0.2rem 0;
+    transition: color 300ms ease-in-out;
+    &:hover {
+      color: $limeGreen;
+    }
+  }
+  &__author {
+    font-size: calc(#{$font-sm} - 15%);
+    padding: 0.2rem 0;
+  }
+  &__body {
+    padding: 0.2rem 0;
+  }
+}
