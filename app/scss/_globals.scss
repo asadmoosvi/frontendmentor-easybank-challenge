@@ -128,9 +128,11 @@ button, .button {
   transition: opacity 300ms ease-in-out;
   font-size: $font-sm;
   color: $white;
+  &:hover, &:focus {
+    color: $white;
+  }
   &:hover {
     opacity: 0.75;
-    color: $white;
   }
 }
 
