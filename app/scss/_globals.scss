@@ -125,14 +125,14 @@ button, .button {
   border: none;
   color: $white;
   font-weight: 400;
-  transition: opacity 300ms ease-in-out;
+  transition: filter 300ms ease-in-out;
   font-size: $font-sm;
   color: $white;
   &:hover, &:focus {
     color: $white;
   }
   &:hover {
-    opacity: 0.75;
+    filter: brightness(125%);
   }
 }
 
