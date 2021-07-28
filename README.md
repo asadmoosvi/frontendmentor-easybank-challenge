@@ -12,6 +12,8 @@ After installing npm, run `npm install` to get all the packages required then
 run `npm start` to start the development server. You can then view the website on
 [http://localhost:1234](http://localhost:1234).
 
+You can also [view the site live here](https://asadmoosvi-easybank.netlify.app/).
+
 ## Screenshots
 
 ### Desktop
