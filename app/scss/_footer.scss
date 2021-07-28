@@ -12,13 +12,12 @@
     justify-items: center;
     @include breakpoint-up(large) {
       grid-template-areas:
-        'logo links cta'
-        'social links cta';
+        "logo links cta"
+        "social links cta";
 
       grid-template-columns: 1fr 2fr 3fr;
       justify-items: start;
       gap: 0;
-
     }
   }
   &__logo {
@@ -77,7 +76,6 @@
         margin-left: auto;
         margin-right: 0;
       }
-
     }
     p {
       margin-bottom: 0;

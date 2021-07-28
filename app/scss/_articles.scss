@@ -29,12 +29,14 @@
   background-color: $white;
   color: inherit;
   transition: 300ms transform ease-in-out, 300ms box-shadow ease-in-out;
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: unset;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     transform: translateY(-0.5rem);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     .article__image {
       filter: brightness(90%);
     }
